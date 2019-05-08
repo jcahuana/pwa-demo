@@ -56,10 +56,16 @@ module.exports = (env, options) => {
           collapseWhitespace: false
         }
       }),
-      new CopyWebpackPlugin([{
+      new CopyWebpackPlugin([
+        {
         from: './source/assets/images',
         to: path.resolve(__dirname, destinationPath) + '/assets/images'
-      }])
+        },
+        {
+        from: './source/manifest.json',
+        to: path.resolve(__dirname, destinationPath) + '/manifest.json'
+        }
+      ])
     ],
     externals: {
       CONFIG: 'CONFIG',
