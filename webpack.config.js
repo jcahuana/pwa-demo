@@ -48,7 +48,7 @@ module.exports = (env, options) => {
         filename: fileNameStructure + '.css'
       }),
       new HtmlWebpackPlugin({
-        title: 'PWA Demo',
+        title: 'Ecommerce PWA demo',
         template: './source/index.html',
         inject: true,
         minify: {
