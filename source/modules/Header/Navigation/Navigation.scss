@@ -1,0 +1,48 @@
+@import '../../Base/Base';
+
+.Navigation {
+	background-color: $color_green_black;
+	min-width: 40px;
+	* {
+		font-family: $font_base;
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+  }
+  
+  &__item {
+    display: inline-block;
+    a {
+      color: $color_silver;
+      font-family: $font_base;
+      text-decoration: none;
+      &:hover {
+        color: $color_white;
+      }
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 5px 10px;
+    color: $color_silver;
+    text-transform: uppercase;
+    &:hover {
+      color: $color_white;
+    }
+  }
+
+  &__menu {
+	  display: none;
+  }
+
+  &__list:after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+  }
+
+}

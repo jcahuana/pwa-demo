@@ -1,0 +1,21 @@
+.Header {
+  display: block;
+}
+
+.Header * {
+  font-family: 'Karla', arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.Header__content {
+  background-color: #213236;
+  max-width: 1000px;
+  margin: 0 auto;
+  min-width: 50px;
+  padding: 0 20px;
+}
+
+.HeaderItems {
+  min-height: 40px;
+  padding: 15px 0;
+}

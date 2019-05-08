@@ -1,0 +1,90 @@
+#----------------------------------------------------------------------------
+# EMBER-CLI DEFAULT
+#----------------------------------------------------------------------------
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+
+# dependencies
+**/node_modules
+**/bower_components
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+
+#----------------------------------------------------------------------------
+# DIVSHOT
+#----------------------------------------------------------------------------
+
+.divshot-cache
+
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+#----------------------------------------------------------------------------
+# MISC
+#----------------------------------------------------------------------------
+.*cache
+*.log
+cache/*
+backup
+_files
+log
+log/**/*
+.monitor
+Forwardfile
+
+# OS X Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.lnk
+*~
+
+# IDE FILES
+*.sublime-*
+*.tmproj
+
+# BOWER & BUILD TOOLS
+/build/*
+/bundle/*
+/bower_components/*
+
+# SASS
+*.sassc
+
+# ZEUS
+zeus.json
+custom_plan.rb
+
+# NODE
+.node_modules
+node_modules
+*/node_modules
+/node_modules/*
+
+# SYMFONY
+/web/bundles/
+/app/bootstrap*
+/app/cache/*
+/app/logs/*
+/vendor/
+/app/config/parameters.yml
+composer.phar
