@@ -4,7 +4,7 @@
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "theme_color": "#213236",
+  "theme_color": "#e2574c",
   "background_color": "#fff",
   "related_aplications": [],
   "prefer_related_aplications": false,
