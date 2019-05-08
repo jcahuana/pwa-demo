@@ -1,8 +1,8 @@
 {
   "short_name": "PWA demo",
   "name": "Ecommerce PWA demo",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "/pwa-demo/",
+  "scope": "/pwa-demo/",
   "display": "standalone",
   "theme_color": "#213236",
   "background_color": "#fff",
