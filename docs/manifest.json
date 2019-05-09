@@ -1,13 +1,6 @@
 {
+  "name": "PWA Demo",
   "short_name": "PWA demo",
-  "name": "Ecommerce PWA demo",
-  "start_url": "/pwa-demo/",
-  "scope": "/pwa-demo/",
-  "display": "standalone",
-  "theme_color": "#213236",
-  "background_color": "#fff",
-  "related_aplications": [],
-  "prefer_related_aplications": false,
   "icons": [
     {
       "src": "assets/images/icons/icon-72x72.png",
@@ -49,5 +42,12 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#213236",
+  "background_color": "#fff",
+  "related_applications": [],
+  "prefer_related_applications": false
 }

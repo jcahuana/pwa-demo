@@ -9,7 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = (env, options) => {
 
 
-  let destinationPath = 'bundle/dev';
+  let destinationPath = 'bundle';
   let fileNameStructure = '[name]';
 
   // Cambiamos la ruta en caso sea producción
@@ -32,7 +32,7 @@ module.exports = (env, options) => {
       compress: true,
       writeToDisk: true,
       port: 9000,
-      https: true,
+      https: false,
       disableHostCheck: true,
       open: true
     },
@@ -58,12 +58,16 @@ module.exports = (env, options) => {
       }),
       new CopyWebpackPlugin([
         {
-        from: './source/assets/images',
-        to: path.resolve(__dirname, destinationPath) + '/assets/images'
+          from: './source/assets/images',
+          to: path.resolve(__dirname, destinationPath) + '/assets/images'
         },
         {
-        from: './source/manifest.json',
-        to: path.resolve(__dirname, destinationPath) + '/manifest.json'
+          from: './source/manifest.json',
+          to: path.resolve(__dirname, destinationPath) + '/manifest.json'
+        },
+        {
+          from: './source/service-worker.js',
+          to: path.resolve(__dirname, destinationPath) + '/service-worker.js'
         }
       ])
     ],
