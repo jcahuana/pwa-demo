@@ -44,7 +44,7 @@
     }
   ],
   "start_url": "/?utm_source=homescreen",
-  "scope": "/",
+  "scope": "/pwa-demo/",
   "display": "standalone",
   "theme_color": "#213236",
   "background_color": "#fff",
