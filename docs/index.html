@@ -56,6 +56,9 @@
               <div class="Navigation__item">
                 <a href="#" class="Navigation__button">Recetas</a>
               </div>
+              <div class="Navigation__item">
+                <a href="#" class="Navigation__button">Promociones</a>
+              </div>
             </div>
         </div>
         
@@ -66,7 +69,7 @@
   </div>
   <script>
     if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('service-worker.js')
+      navigator.serviceWorker.register('./service-worker.js')
       .then(function (registration) {
         console.log('ServiceWorker registration successful with scope:', registration.scope);
       }).catch(function (error) {
